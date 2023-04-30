@@ -89,6 +89,6 @@ img {
   font-weight: bold;
 }
 
-.CouponDetailsPurchase span{
+.CouponDetailsPurchase .company{
   text-align: left !important;
 }
