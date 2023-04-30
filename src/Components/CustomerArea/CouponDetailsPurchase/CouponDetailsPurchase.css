@@ -26,8 +26,7 @@ img {
 .image {
   width: 150px;
   height: 130px;
-  -webkit-filter: contrast(130%);
-  filter: contrast(130%);
+  
   opacity: 1;
   display: block;
   transition: .5s ease;
