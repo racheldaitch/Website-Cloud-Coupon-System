@@ -16,7 +16,7 @@ import "./Home.css";
 function Home(): JSX.Element {
 
 
-    const [coupons, setCoupons] = useState<Coupon[]>(store.getState().couponsState.myCoupons);
+    const [coupons, setCoupons] = useState<Coupon[]>(store.getState().couponsState.coupons);
     const [selectedPrice, setSelectedPrice] = useState<number>(0);
     const [selectedName, setSelectedName] = useState<string>("");
 
@@ -110,7 +110,7 @@ function Home(): JSX.Element {
                 email: riki@gmail.com,
                 password: 1234
             </p>
-
+            {store.getState().couponsState.coupons.length===0 && <Loading/>}
             {coupons.length === 0 && <h2>No coupons found 🙁</h2>}
             {coupons.map((c) => (
                 <CouponDetailsPurchase key={c.id} coupon={c} />
