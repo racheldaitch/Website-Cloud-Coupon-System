@@ -91,4 +91,6 @@ img {
 
 .CouponDetailsPurchase .company{
   text-align: left !important;
+  margin-bottom: 10px;
+  color: black;
 }
