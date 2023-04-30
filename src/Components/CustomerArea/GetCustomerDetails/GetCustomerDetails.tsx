@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Customer from "../../../Models/Customer";
 import customerService from "../../../Services/CustomerService";
 import notificationService from "../../../Services/NotificationService";
+import Loading from "../../SharedArea/Loading/Loading";
+
 import "./GetCustomerDetails.css";
 
 function GetCustomerDetails(): JSX.Element {
@@ -22,13 +24,13 @@ function GetCustomerDetails(): JSX.Element {
 
     return (
         <div className="GetCustomerDetails">
-            {customer &&
+            {customer ?
                 <div>
                     <h3>Name: {customer.firstName} {customer.lastName}</h3>
                     <hr />
                     <h4>Email: {customer.email}</h4>
                     <h4>Password: {customer.password}</h4>
-                </div>
+                </div> : <Loading/>
             }
         </div>
     );
