@@ -11,6 +11,8 @@ import { FaGifts } from "react-icons/fa";
 import store from "../../../Redux/Store";
 import { Button, FormControlLabel, Paper, Slide, Switch, TextField, Theme, createStyles, makeStyles } from "@mui/material";
 import Category from "../../../Models/Category";
+import Loading from "../../SharedArea/Loading/Loading";
+
 import "./Home.css";
 
 function Home(): JSX.Element {
