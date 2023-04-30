@@ -54,7 +54,7 @@ function CompanyList(): JSX.Element {
             {companies.map((c) => (
                 <CompanyCard key={c.id} company={c} />
             ))}
-{store.getState().couponsState.coupons.length===0 && <Loading/>}
+{store.getState().companiesState.companies.length===0 && <Loading/>}
             {companies.length === 0 && <h1> No Companies</h1>}
             <div className="list-top-company">{
                     companies.length > 0 && <a href="#companies-list-top" title="Scroll up">👆</a>
