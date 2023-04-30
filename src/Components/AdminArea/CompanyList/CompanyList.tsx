@@ -5,6 +5,8 @@ import adminService from "../../../Services/AdminService";
 import notificationService from "../../../Services/NotificationService";
 import CompanyCard from "../CompanyCard/CompanyCard";
 import { ImSearch } from "react-icons/im";
+import Loading from "../../SharedArea/Loading/Loading";
+
 import "./CompanyList.css";
 
 function CompanyList(): JSX.Element {
@@ -52,8 +54,8 @@ function CompanyList(): JSX.Element {
             {companies.map((c) => (
                 <CompanyCard key={c.id} company={c} />
             ))}
-
-            {store.getState().companiesState.companies.length === 0 && <h1> No Companies</h1>}
+{store.getState().couponsState.coupons.length===0 && <Loading/>}
+            {companies.length === 0 && <h1> No Companies</h1>}
             <div className="list-top-company">{
                     companies.length > 0 && <a href="#companies-list-top" title="Scroll up">👆</a>
                 }</div>
