@@ -5,6 +5,8 @@ import adminService from "../../../Services/AdminService";
 import notificationService from "../../../Services/NotificationService";
 import CustomerCard from "../CustomerCard/CustomerCard";
 import { ImSearch } from "react-icons/im";
+import Loading from "../../SharedArea/Loading/Loading";
+
 import "./CustomerList.css";
 
 function CustomerList(): JSX.Element {
@@ -49,7 +51,9 @@ function CustomerList(): JSX.Element {
             {customers.map((c) => (
                 <CustomerCard key={c.id} customer={c} />
             ))}
-            {store.getState().customersState.customers.length === 0 && <h1> No Customers</h1>}<br />
+            {store.getState().customersState.customers.length === 0 && <Loading/>}
+
+            {customers.length === 0 && <h1> No Customers</h1>}<br />
             <div className="list-top-customer">{
                 customers.length > 0 && <a href="#customers-list-top" title="Scroll up">👆</a>
             }</div>
