@@ -24,13 +24,13 @@ function GetCustomerDetails(): JSX.Element {
 
     return (
         <div className="GetCustomerDetails">
-            {customer :
+            {customer ?
                 <div>
                     <h3>Name: {customer.firstName} {customer.lastName}</h3>
                     <hr />
                     <h4>Email: {customer.email}</h4>
                     <h4>Password: {customer.password}</h4>
-                </div> ? <Loading/> 
+                </div> : <Loading/> 
             }
         </div>
     );
