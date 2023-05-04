@@ -33,6 +33,8 @@ function Routing(): JSX.Element {
                 <Route path="/home" element={<Home />} />
                 <Route index element={<Home />} />
                 <Route path="/login" element={<Login />} />
+                                <Route path="main--riki-coupons-system.netlify.app/about" element={<About />} />
+
                 <Route path="/about" element={<About />} />
 
 //admin
