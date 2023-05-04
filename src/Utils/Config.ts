@@ -11,9 +11,8 @@ class DevelopmentConfig {
 }
 
 class ProductionConfig {
-        public adminUrl = "https://main--riki-coupons-system.netlify.app/";
 
-    //public adminUrl = "https://server-cloud-coupon-system-production.up.railway.app/api/admin/";
+    public adminUrl = "https://server-cloud-coupon-system-production.up.railway.app/api/admin/";
     public companyUrl = "https://server-cloud-coupon-system-production.up.railway.app/api/company/";
     public customerUrl = "https://server-cloud-coupon-system-production.up.railway.app/api/customer/";
     public authUrl = "https://server-cloud-coupon-system-production.up.railway.app/auth/login";
