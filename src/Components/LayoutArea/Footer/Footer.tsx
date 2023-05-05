@@ -11,7 +11,7 @@ function Footer(): JSX.Element {
                 <a href="https://wa.me/972559339449?text=%D7%9C%D7%A9%D7%9C%D7%99%D7%97%D7%AA%20%D7%94%D7%95%D7%93%D7%A2%D7%94
 " target="newwin" title="Chat on WhatsApp"><BsWhatsapp className="whatsapp" /></a>&nbsp;&nbsp;
                 <a href="mailto:rikim1010@gmail.com"
-                       // ?subject=to dir chv&body=my dir i so want to back to you"
+                       // ?subject=? &body=?"
                     className="email" title="Send an email" target="newwin"><MdAlternateEmail /></a>
 
 
