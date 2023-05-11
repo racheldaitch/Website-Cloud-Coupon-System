@@ -119,7 +119,7 @@ function Home(): JSX.Element {
             ))}
             <div className="top">
                 {
-                    coupons.length > 0 && <a href="#coupons-list-top" title="Scroll up">👆</a>
+                    coupons.length > 0 && <NavLink to="/home" title="Scroll up">👆</NavLink>
                 }</div>
         </div>
     );
