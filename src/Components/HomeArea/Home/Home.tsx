@@ -12,6 +12,7 @@ import store from "../../../Redux/Store";
 import { Button, FormControlLabel, Paper, Slide, Switch, TextField, Theme, createStyles, makeStyles } from "@mui/material";
 import Category from "../../../Models/Category";
 import Loading from "../../SharedArea/Loading/Loading";
+import { NavLink } from "react-router-dom";
 
 import "./Home.css";
 
